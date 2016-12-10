@@ -189,6 +189,9 @@
 		<cfset var local = {} />
 		<cfset var m = '' />
 
+		<!--- init debug var --->
+		<cfset local.debug = false />
+		
 		<cfset _taffyRequest.metrics = {} />
 		<cfset m = _taffyRequest.metrics />
 		<cfset m.init = getTickCount() />
